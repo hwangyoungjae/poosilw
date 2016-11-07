@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}{{TITLE}}{% endblock title %}
+{% block content %}
+<div class="results">
+    {% for item in RESULT %}
+        {{item.0}}
+    {% endfor %}
+</div>
+{% endblock content %}
